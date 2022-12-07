@@ -3,7 +3,9 @@ package task3;
 public class Calc {
 
 	public int getResult(String s) {
-		return -1;
+		if (s.length()==0)
+			return 0;
+		return 1;
 	}
 	
 
