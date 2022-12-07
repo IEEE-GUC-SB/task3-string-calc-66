@@ -13,6 +13,14 @@ public class string_calc {
 		assertEquals(r,c.getResult("1,2,3"));
 
 	}
+
+	@Test
+	public void test2(){
+		Calc c = new Calc();
+		int r = 8;
+		assertEquals(r,c.getResult("1\n2,5"));
+
+	}
 	
 	
 
