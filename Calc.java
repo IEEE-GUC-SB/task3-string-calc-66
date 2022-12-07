@@ -7,6 +7,7 @@ public class Calc {
 		if (s.length()==0)
 			return 0;
 		else  {
+			s=s.replaceAll("\n", ",");
 			String numbers[] = s.split(","); 
 			for (String number : numbers) {  // loop through all the number in the string array
 			    Integer n = Integer.parseInt(number);  // parse each number

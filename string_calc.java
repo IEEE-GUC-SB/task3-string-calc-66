@@ -19,6 +19,7 @@ public class string_calc {
 		Calc c = new Calc();
 		int r = 8;
 		assertEquals(r,c.getResult("1\n2,5"));
+		
 
 	}
 	
