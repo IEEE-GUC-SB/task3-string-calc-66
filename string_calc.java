@@ -29,6 +29,13 @@ public class string_calc {
 		assertEquals(r,c.getResult("1,\n"));
 		
 	}
+	@Test
+	public void test4(){
+		Calc c = new Calc();
+		int r = 100;
+		assertEquals(r,c.getResult("-10,3"));
+		
+	}
 	
 	
 
