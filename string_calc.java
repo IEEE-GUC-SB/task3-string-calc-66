@@ -47,6 +47,13 @@ public class string_calc {
 	    //System.out.println(actualMessage);
 	    assertTrue(actualMessage.contains(expectedMessage));
 	}
+	@Test
+	public void test5() throws Exception{
+		Calc c = new Calc();
+		int r = 2;
+		assertEquals(r,c.getResult("2,1001"));
+		
+	}
 	
 	
 
