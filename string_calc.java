@@ -20,7 +20,14 @@ public class string_calc {
 		int r = 8;
 		assertEquals(r,c.getResult("1\n2,5"));
 		
-
+	}
+	@Test
+	public void test3(){
+		Calc c = new Calc();
+		int r = 0;
+		
+		assertEquals(r,c.getResult("1,\n"));
+		
 	}
 	
 	
