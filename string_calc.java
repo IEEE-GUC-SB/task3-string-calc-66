@@ -38,10 +38,10 @@ public class string_calc {
 	public void test4() {
 		Calc c = new Calc();
 	    Exception exception = assertThrows(Exception.class, () -> {
-	        c.getResult("-1,2,3");
+	        c.getResult("-1,3,-2");
 	    });
 
-	    String expectedMessage = "negatives not allowed";
+	    String expectedMessage = "Unallowed negative numbers:-1-2";
 	    
 	    String actualMessage = exception.getMessage();
 	    //System.out.println(actualMessage);

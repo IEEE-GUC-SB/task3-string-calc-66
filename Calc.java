@@ -8,6 +8,9 @@ public class Calc {
 
 		int sum=0;
 		int x =0;
+		boolean flag = false;
+		String negatives="";
+				
 		if (s.length()==0)
 			return 0;
 		else  {
@@ -26,11 +29,14 @@ public class Calc {
 			for (String number : numbers) {  // loop through all the number in the string array
 			    Integer n = Integer.parseInt(number);  // parse each number
 			    if(n<0) {
-			    	throw new Exception("negatives not allowed");			    	
+			    	flag=true;
+			    	negatives+=n.toString();
 			    }
 				System.out.println(n);
 			    sum += n;     // sum the numbers
 			  }	
+			if(flag)
+				throw new Exception("Unallowed negative numbers:"+negatives);
 			return sum;
 		}
 	
