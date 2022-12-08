@@ -50,8 +50,8 @@ public class string_calc {
 	@Test
 	public void test5() throws Exception{
 		Calc c = new Calc();
-		int r = 2;
-		assertEquals(r,c.getResult("2,1001"));
+		int r = 7;
+		assertEquals(r,c.getResult("2,5,1001"));
 		
 	}
 	

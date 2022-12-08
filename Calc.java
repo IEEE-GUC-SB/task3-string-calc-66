@@ -32,8 +32,9 @@ public class Calc {
 			    	flag=true;
 			    	negatives+=n.toString();
 			    }
-				System.out.println(n);
-			    sum += n;     // sum the numbers
+				//System.out.println(n);
+			    if(n<=1000)
+			    	sum += n;     // sum the numbers
 			  }	
 			if(flag)
 				throw new Exception("Unallowed negative numbers:"+negatives);
